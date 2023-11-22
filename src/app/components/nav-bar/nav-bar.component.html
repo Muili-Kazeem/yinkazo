@@ -1,0 +1,35 @@
+<div class="container">
+  <a class="brand-logo" routerLink="/">Akinola Olayinka</a>
+
+  <ul class="navbar-links" [class.closeNav]="isMenuOpen">
+    <li>
+      <a routerLink="/" (click)="navigate()" class="navbar-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        Profile
+      </a>
+    </li>
+    <li>
+      <a routerLink="/record" (click)="navigate()" class="navbar-link" routerLinkActive="active">
+        Records
+      </a>
+    </li>
+    <li>
+      <a routerLink="/achievement" (click)="navigate()" class="navbar-link" routerLinkActive="active">
+        Achievements
+      </a>
+    </li>
+    <li>
+      <a routerLink="/connect" (click)="navigate()" class="navbar-link" routerLinkActive="active">
+        Connects
+      </a>
+    </li>
+    <li>
+      <a routerLink="/manifesto" (click)="navigate()" class="navbar-link" routerLinkActive="active">
+        Manifesto
+      </a>
+    </li>
+  </ul>
+
+  <div class="toggle-icon">
+    <mat-icon (click)="toggleMenu()">{{ isMenuOpen ? "menu" : "close" }}</mat-icon>
+  </div>
+</div>

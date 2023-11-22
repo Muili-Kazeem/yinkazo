@@ -1,0 +1,55 @@
+.fluid {
+  border-radius: 20px;
+  background: white;
+  border: solid rgba(grey, 0.1) 2px;
+  padding: 20px;
+  display: flex;
+
+  ul {
+    display: flex;
+    gap: 10px;
+  }
+}
+
+.container {
+  display: grid;
+  gap: 1rem;
+  padding: 20px;
+
+  @media (min-width: 800px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr max-content;
+  }
+
+  .connect {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (min-width: 800px) {
+      grid-column: 1/2;
+      grid-row: 1/3;
+    }
+
+    ul {
+      display: flex;
+      gap: 10px;
+    }
+  }
+
+  .links {
+
+    @media (min-width: 800px) {
+      grid-column: 2/5;
+      grid-row: 1/2;
+    }
+  }
+
+  .build {
+
+    @media (min-width: 800px) {
+      grid-column: 2/5;
+      grid-row: 2/3;
+    }
+  }
+}
