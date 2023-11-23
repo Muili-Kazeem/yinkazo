@@ -13,6 +13,8 @@ import { RecordComponent } from './components/record/record.component';
 import { AchievementComponent } from './components/achievement/achievement.component';
 import { ConnectComponent } from './components/connect/connect.component';
 import { ManifestoComponent } from './components/manifesto/manifesto.component';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { ManifestoComponent } from './components/manifesto/manifesto.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"yinkazo","appId":"1:871739849625:web:1931c15ae497bc05d73108","storageBucket":"yinkazo.appspot.com","apiKey":"AIzaSyCkBeIWZBpCnqb1FCD_xP2L1d_FqkaUF_g","authDomain":"yinkazo.firebaseapp.com","messagingSenderId":"871739849625","measurementId":"G-2GSFXLVXSH"})),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]
