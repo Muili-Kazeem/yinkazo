@@ -21,13 +21,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
+
+  @media (min-width: 800px) {
+    gap: 10px;
+  }
 }
 
 .navbar-link {
+  font-size: 2rem;
   border-radius: 10px;
   padding: 10px;
   transition: all 200ms ease-in-out;
+
+  @media (min-width: 800px) {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
 }
 
 .navbar-link:hover,
@@ -37,7 +47,7 @@
 
 .active,
 .active .icon {
-  color: var(--clr-lgtblue);
+  color: goldenrod;
 }
 
 .toggle-icon {
@@ -48,13 +58,13 @@
 @media (max-width: 800px) {
   .navbar-links {
     position: absolute;
-    background-color: var(--clr-lgtblk2);
+    background-color: white;
     right: 0%;
     top: 0%;
     width: 110%;
     height: 100vh;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
     justify-content: center;
     transition: all 200ms ease-in-out;
   }
