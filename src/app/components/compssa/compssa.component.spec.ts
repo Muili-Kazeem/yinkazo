@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ConnectComponent } from './connect.component';
+import { CompssaComponent } from './compssa.component';
 
-describe('ConnectComponent', () => {
-  let component: ConnectComponent;
-  let fixture: ComponentFixture<ConnectComponent>;
+describe('CompssaComponent', () => {
+  let component: CompssaComponent;
+  let fixture: ComponentFixture<CompssaComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ConnectComponent]
+      declarations: [CompssaComponent]
     });
-    fixture = TestBed.createComponent(ConnectComponent);
+    fixture = TestBed.createComponent(CompssaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

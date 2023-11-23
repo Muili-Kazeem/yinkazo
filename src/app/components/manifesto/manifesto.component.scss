@@ -1,6 +1,58 @@
 .container {
-  padding-block: 100px;
+  min-height: 100vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  background-color: white;
+
+  & .bcg {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  & .bcg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43,5,103);
+    background: linear-gradient(90deg, rgba(43,5,103,.8) 0%, rgba(147,95,7,.8) 52%, rgba(4,87,94,.8) 98%);
+    z-index: 3;
+  }
+
+  .detail {
+    background-color: rgba($color: #000000, $alpha: .5);
+    color: white;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+
+    p {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-block: 20px;
+    }
+
+    .gold {
+      color: gold;
+    }
+  }
 }

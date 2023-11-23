@@ -1,0 +1,143 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  background-color: white;
+
+  & .bcg {
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  & .bcg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(43,5,103);
+    background: linear-gradient(90deg, rgba(43,5,103,.8) 0%, rgba(147,95,7,.8) 52%, rgba(4,87,94,.8) 98%);
+    z-index: 3;
+  }
+
+  .detail {
+    padding-block: 100px;
+    background-color: rgba($color: #000000, $alpha: .5);
+    color: white;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .prompt {
+      width: 80%;
+      margin: auto;
+      text-transform: uppercase;
+      h2 {
+        font-size: 3rem;
+        line-height: .95;
+        font-weight: 700;
+        font-family: 'Chakra Petch', sans-serif;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.25rem;
+      }
+    }
+
+    .countdown {
+      width: 100%;
+      font-family: 'Chakra Petch', sans-serif;
+      line-height: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: left;
+      align-items: start;
+      padding: 30px 60px;
+
+      @media (min-width: 800px) {
+        gap: 30px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      p {
+        font-size: 4rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media (min-width: 800px) {
+          font-size: 6rem;
+        }
+      }
+
+      span {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: gold;
+        font-family: 'DM Sans', sans-serif;;
+      }
+    }
+
+    .footer {
+      width: 80%;
+      margin: auto;
+      font-weight: 400;
+      font-size: 1.2rem;
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .bethere {
+        background-color: gold;
+        border-radius: 10px;
+        padding: 5px 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        font-family: 'Chakra Petch', sans-serif;
+        color: black;
+        width: max-content;
+        margin: auto;
+      }
+    }
+
+    .manifesto {
+      margin-block: 20px 50px;
+
+      p {
+        font-weight: 500;
+        font-size: 1.25rem;
+      }
+
+      a {
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: gold;
+        font-family: 'Chakra Petch', sans-serif;
+      }
+    }
+  }
+}

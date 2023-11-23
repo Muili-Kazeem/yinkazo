@@ -75,8 +75,10 @@
         overflow: hidden;
 
         img {
-          object-fit: cover;
-          object-position: center;
+          @media (min-width: 800px) {
+            object-fit: cover;
+            object-position: center -50px;
+          }
         }
       }
 

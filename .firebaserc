@@ -1,21 +1,5 @@
 {
   "projects": {
     "default": "yinkazo"
-  },
-  "targets": {
-    "yinkazo-43bd5": {
-      "hosting": {
-        "yinkazo": [
-          "yinkazo1"
-        ]
-      }
-    },
-    "yinkazo": {
-      "hosting": {
-        "yinkazo": [
-          "yinkazo"
-        ]
-      }
-    }
   }
 }

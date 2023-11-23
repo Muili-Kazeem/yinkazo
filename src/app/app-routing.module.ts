@@ -4,7 +4,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { RecordComponent } from './components/record/record.component';
 import { AchievementComponent } from './components/achievement/achievement.component';
-import { ConnectComponent } from './components/connect/connect.component';
+import { ManifestoComponent } from './components/manifesto/manifesto.component';
+import { CompssaComponent } from './components/compssa/compssa.component';
 
 const routes: Routes = [
   {
@@ -20,12 +21,12 @@ const routes: Routes = [
     component: AchievementComponent
   },
   {
-    path: "connect",
-    component: ConnectComponent
+    path: "compssa",
+    component: CompssaComponent
   },
   {
     path: "manifesto",
-    component: ConnectComponent
+    component: ManifestoComponent
   },
   {
     path: "**",

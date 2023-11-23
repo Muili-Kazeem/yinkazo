@@ -11,10 +11,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RecordComponent } from './components/record/record.component';
 import { AchievementComponent } from './components/achievement/achievement.component';
-import { ConnectComponent } from './components/connect/connect.component';
 import { ManifestoComponent } from './components/manifesto/manifesto.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
+import { CompssaComponent } from './components/compssa/compssa.component';
 
 @NgModule({
   declarations: [
@@ -25,8 +25,8 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
     FooterComponent,
     RecordComponent,
     AchievementComponent,
-    ConnectComponent,
-    ManifestoComponent
+    ManifestoComponent,
+    CompssaComponent
   ],
   imports: [
     BrowserModule,

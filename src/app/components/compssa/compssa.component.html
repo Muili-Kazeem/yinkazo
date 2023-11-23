@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="bcg">
+    <img src="../../../assets/logo/Compssa_logo.png" class="bg" alt="achievement">
+  </div>
+  <div class="detail">
+    <div class="prompt">
+      <h2>Compssa <br> Election</h2>
+      <p>Team Yinkazo is getting ready. Are you?</p>
+    </div>
+    <div class="countdown" *ngIf="timer | async as timer">
+      <p> {{ timer.days }} <br><span>days</span></p>
+      <p> {{ timer.hours }} <br><span>hours</span></p>
+      <p> {{ timer.minutes }} <br><span>minutes</span></p>
+      <p> {{ timer.seconds }} <br><span>seconds</span></p>
+    </div>
+    <div class="footer">
+      <p>We will be back with something more amazing soon</p>
+      <p class="bethere">Be there!!!</p>
+    </div>
+    <div class="manifesto">
+      <p>Check out Yinkazo's Manifesto <a href="/manifesto">here</a></p>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/yinkazo",
     "ignore": [
       "firebase.json",
       "**/.*",
@@ -14,6 +14,5 @@
     ]
   },
   "remoteconfig": {
-    "template": "remoteconfig.template.json"
   }
 }
