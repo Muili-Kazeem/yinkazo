@@ -6,6 +6,7 @@ import { RecordComponent } from './components/record/record.component';
 import { AchievementComponent } from './components/achievement/achievement.component';
 import { ManifestoComponent } from './components/manifesto/manifesto.component';
 import { CompssaComponent } from './components/compssa/compssa.component';
+import { PreveiwComponent } from './components/preveiw/preveiw.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "compssa",
     component: CompssaComponent
+  },
+  {
+    path: "preview",
+    component: PreveiwComponent
   },
   {
     path: "manifesto",

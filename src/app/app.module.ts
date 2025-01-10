@@ -15,6 +15,7 @@ import { ManifestoComponent } from './components/manifesto/manifesto.component';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { CompssaComponent } from './components/compssa/compssa.component';
+import { PreveiwComponent } from './components/preveiw/preveiw.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { CompssaComponent } from './components/compssa/compssa.component';
     RecordComponent,
     AchievementComponent,
     ManifestoComponent,
-    CompssaComponent
+    CompssaComponent,
+    PreveiwComponent
   ],
   imports: [
     BrowserModule,
